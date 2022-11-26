@@ -1,10 +1,10 @@
 import { useSelector } from 'react-redux';
 import { statusFilters } from 'redux/constants';
 import { useDispatch } from 'react-redux';
-import { setFilter } from 'redux/actions';
+import { setFilter } from 'redux/filterSlice';
 
 const Filter = () => {
-  const filter = useSelector(state => state.filters.status);
+  const filter = useSelector(state => state.filter.status);
   const dispatch = useDispatch();
 
   return (

@@ -1,9 +1,7 @@
 import { useSelector } from 'react-redux';
-import { getTasks } from 'redux/selectors';
 
 const Info = () => {
-  const tasks = useSelector(getTasks);
-  // console.log(tasks);
+  const tasks = useSelector(state => state.tasks);
 
   const getCount = tasks => {
     return tasks.reduce(

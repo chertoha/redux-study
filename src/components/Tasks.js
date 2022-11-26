@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux';
 import { statusFilters } from 'redux/constants';
 import { getTasks, getFilter } from 'redux/selectors';
 import { useDispatch } from 'react-redux';
-import { toggleCompleted, deleteTask } from 'redux/actions';
+import { toggleCompleted, deleteTask } from 'redux/tasksSlice';
 
 const Tasks = () => {
   const tasks = useSelector(getTasks);
